@@ -1,18 +1,6 @@
-<div align="center">
-  <img src="assets/scriptly-scribble.gif" width="900" alt="Scriptly - notes that flow" />
-  <p><strong>Scriptly</strong> is a MERN-powered note taking app built for fast capture, clean organization, and flow.</p>
-</div>
+# Scriptly
 
-## Animated Title
-
-GitHub does not run SVG or CSS animation in README files. Generate the scribble GIF locally:
-
-```bash
-python tools/generate_scribble_gif.py --text "Scriptly - notes that flow" --out assets/scriptly-scribble.gif
-```
-
-If the font is not found, the script falls back to a default font. Drop a handwritten font file like
-`Caveat-Regular.ttf` into the repo root to use it.
+Notes that flow.
 
 ## About
 
