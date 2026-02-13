@@ -1,6 +1,8 @@
-# Scriptly
+<div align="center">
+  <img src="assets/scriptly-title.svg" width="800" alt="Scriptly - Notes that Flow" />
+</div>
 
-Notes that flow.
+<br/>
 
 ## About
 
