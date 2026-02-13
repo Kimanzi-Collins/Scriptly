@@ -3,7 +3,16 @@
   <p><strong>Scriptly</strong> is a MERN-powered note taking app built for fast capture, clean organization, and flow.</p>
 </div>
 
-> GitHub strips inline SVG/CSS animation, so the animated title should be a GIF in assets/scriptly-scribble.gif.
+## Animated Title
+
+GitHub does not run SVG or CSS animation in README files. Generate the scribble GIF locally:
+
+```bash
+python tools/generate_scribble_gif.py --text "Scriptly - notes that flow" --out assets/scriptly-scribble.gif
+```
+
+If the font is not found, the script falls back to a default font. Drop a handwritten font file like
+`Caveat-Regular.ttf` into the repo root to use it.
 
 ## About
 
