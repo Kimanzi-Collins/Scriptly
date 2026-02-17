@@ -38,6 +38,9 @@ Scriptly focuses on a smooth writing experience with thoughtful structure for re
    - `cd backend` then `npm run dev`
    - `cd ../frontend` then `npm run dev`
 
+Note to self and repo readers: Use **Postman** to confirm all controllers are working properly
+You can perform any HTTP request method from GET to DELETE.
+
 ## Sponsors
 
 Support Scriptly via GitHub Sponsors:
