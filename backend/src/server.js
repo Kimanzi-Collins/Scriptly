@@ -3,6 +3,7 @@ import notesRoutes from './routes/notesRoutes.js';
 import { connect } from 'mongoose';
 import { connectDB } from './config/db.js';
 import dotenv from 'dotenv';
+import rateLimiter from './middleware/rateLimiter.js';
 
 dotenv.config();
 
@@ -18,6 +19,7 @@ app.use(express.json()); // Middleware to parse JSON bodies
   //console.log(`Request method is: ${req.method}, Request URL is: ${req.url}`);
   //next();
 //});
+app.use(rateLimiter);
 
 app.use("/api/notes", notesRoutes);
 
