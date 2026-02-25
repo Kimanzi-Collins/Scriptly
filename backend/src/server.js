@@ -4,6 +4,7 @@ import { connect } from 'mongoose';
 import { connectDB } from './config/db.js';
 import dotenv from 'dotenv';
 import rateLimiter from './middleware/rateLimiter.js';
+import cors from 'cors';
 
 dotenv.config();
 
@@ -18,6 +19,10 @@ app.use(express.json()); // Middleware to parse JSON bodies
   //console.log(`Request method is: ${req.method}, Request URL is: ${req.url}`);
   //next();
 //});
+app.use(cors({
+  origin: 'http://localhost:5173', // Adjust this to match your frontend's URL and port
+})
+);
 app.use(rateLimiter);
 
 app.use("/api/notes", notesRoutes);
