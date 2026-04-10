@@ -5,8 +5,10 @@ import { connectDB } from './config/db.js';
 import dotenv from 'dotenv';
 import rateLimiter from './middleware/rateLimiter.js';
 import cors from 'cors';
+import dns from 'node:dns';
 
 dotenv.config();
+dns.setServers(['1.1.1.1', '8.8.8.8']);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
