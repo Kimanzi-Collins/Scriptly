@@ -8,6 +8,8 @@
 
 Scriptly focuses on a smooth writing experience with thoughtful structure for real work. This README is a living draft as features land.
 
+It's a simple project that focuses on page routing, database functionality and how to handle API requests.
+
 ## Tech Stack
 
 - MongoDB for durable note storage
